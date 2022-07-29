@@ -1,0 +1,151 @@
+#root{
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Poppins', sans-serif;
+    /*- Weights: 200, 400, 600*/
+}
+*{
+   /* Primary*/
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    /*Neutral*/
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --very-light-gray-one: rgba(247, 244, 244, 0.555);
+    font-size: 15px;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background: var(--very-light-gray);
+}
+.main{
+    max-width: 24em;
+    padding: 55px 20px;
+    margin: auto;
+}
+.container_tittle{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.tittle_header{
+    font-size: 1.6em;
+    font-weight: 200;
+    color: var(--very-dark-blue);
+    
+}
+.tittle_header_principal{
+    font-size: 1.65em;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+.paragraph_header{
+    font-size: 1.03em;
+    padding: 15px 0;
+    color: var(--grayish-blue);
+}
+.container_card{
+    display: flex;
+    flex-direction: column;
+
+}
+.card{
+    border-top: 4px solid blue;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 37px;
+    margin-bottom: 20px ;
+    border-radius: 5px;
+    background: white;
+    box-shadow: .5px 4px 20px 1px var(--grayish-blue);
+    color: var(--grayish-blue);
+}
+.image{
+    height: 55px ;
+    width: 55px;
+
+}
+.tittle_card{
+    font-size: 1.3em;
+    color: var(--very-dark-blue);
+
+    
+}
+.paragraph{
+    font-size: .83em;
+    margin-top: 0.16em;
+    margin-bottom: 3em;
+}
+.image{
+    position: relative;
+    left: 195px;
+    margin-bottom: 10px;
+    
+}
+.car_done{
+    border-top: 4px solid var(--cyan);
+}
+.card_two{
+    border-top: 4px solid var(--red);
+}
+.card_three{
+    border-top: 4px solid var(--orange);
+}
+.card_for{
+    border-top: 4px solid var(--blue);
+}
+
+@media  screen and (min-width: 1150px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        max-width: 1010px;
+        padding: 0;
+        
+    }
+    .container_card{
+        height: 470px;
+        display: flex;
+        width: 1010px;
+        position: relative;
+        
+    }
+    .container_tittle{
+        max-width: 360px;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    .card{
+        position: absolute;
+        height: 221px;
+        width: 320px;   
+    }
+    .card_two{
+       margin: auto;
+       left: 0;
+       right: 0;
+        
+    }
+    .card_three{
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    .card_one{
+        bottom: 0;
+        top: 0;
+        margin: auto;
+    }
+    .card_for{
+        margin: auto;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    
+}
